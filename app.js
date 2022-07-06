@@ -1,7 +1,7 @@
 const featuredBlogPosts = new Swiper('.featured-blog .swiper', {
-	speed: 2500,
+	speed: 7500,
+	delay: 400,
 	autoplay: {
-		delay: 1250,
 		disableOnInteraction: false
 	},
 	spaceBetween: 20,
@@ -9,10 +9,9 @@ const featuredBlogPosts = new Swiper('.featured-blog .swiper', {
 	// number of slides per view
 	slidesPerView: 1,
 	pagination: {
-		el: '.featured-blog .swiper-pagination',
-		clickable: true,
+		el: '.swiper-pagination',
 		dynamicBullets: true,
-		type: 'bullets'
+		clickable: true
 	}
 })
 

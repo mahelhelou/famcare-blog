@@ -1,6 +1,37 @@
+@font-face {
+  font-family: 'Famcare Bold';
+  src: url('fonts/Famtree-Bold.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Famcare Medium';
+  src: url('fonts/Famtree-Medium.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Famcare Regular';
+  src: url('fonts/Famtree-Regular.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Famcare Light';
+  src: url('fonts/Famtree-Light.otf') format("truetype");
+}
+
 body {
   direction: rtl;
   text-align: right;
+  font-family: 'Famcare Regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500 !important;
+  font-family: 'Famcare Medium', sans-serif;
 }
 
 /* Resets */
@@ -14,27 +45,47 @@ body {
   opacity: .8;
 }
 
-.featured-blog .swiper-slide-divider {
-  width: 5rem;
-  height: 100%;
+.featured-blog {
+  position: relative;
+}
+
+.featured-blog::before {
+  position: absolute;
+  content: '';
+  width: 168px;
+  height: 599px;
+  right: 0;
   background-color: #7d7bfa;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
-  display: inline-block;
+  z-index: 2;
 }
 
-.featured-blog .featured-blog__title {
+.featured-blog__title {
   font-size: 2rem;
-  font-weight: 700 !important;
+  margin-right: 128px;
+  margin-bottom: 3rem;
+  font-family: 'Famcare Medium';
 }
 
-.featured-blog .featured-blog__actions .btn {
+.featured-blog__excerpt {
+  font-size: 17px;
+  margin-right: 120px;
+  margin-bottom: 64px;
+}
+
+.featured-blog__actions {
+  margin-right: 120px;
+  margin-top: 87px;
+}
+
+.featured-blog__actions-button .btn {
   border-radius: .75rem;
 }
 
 .featured-blog .featured-blog__image {
   width: 100%;
-  height: 400px;
+  height: 599px;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
   overflow: hidden;
@@ -58,20 +109,71 @@ body {
   background-color: #7d7bfa;
 }
 
-/* Blog posts */
-.blog-posts .card-img {
-  height: 190px;
-  border-radius: 1rem;
+/* Blog post */
+.blog-post__author {
+  display: flex;
+}
+
+/* Margins */
+
+.featured-blog .blog-post__author {
+  margin-right: 120px;
+}
+
+.blog-posts .blog-post__author {
+  margin-right: 0;
+}
+
+.blog-post__author-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   overflow: hidden;
 }
 
-.blog-posts .card-img img {
+.blog-post__author-image img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.blog-post__author-name {
+  font-family: 'Famcare Medium';
+  font-size: 15px;
+  margin-bottom: 0.25rem;
+}
+
+.blog-post__author-specialization {
+  font-size: 12px;
+}
+
+/* Blog posts */
+.blog-posts .card-img {
+  height: 225px;
+  border-radius: 1rem;
+}
+
+.blog-posts form {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-posts form input {
+  outline: 0;
+  height: 32px;
+}
+
+.blog-posts .row {
+  margin-top: 64px;
+}
+
 .blog-posts .blog-posts__meta {
-  margin-bottom: 0.75rem;
+  line-height: 24px;
+  display: flex;
+  font-family: 'Famcare Medium';
+  font-size: 12px;
+  color: #9a98b3;
 }
 
 .blog-posts .blog-posts__meta span.date {
@@ -79,5 +181,22 @@ body {
 }
 
 .blog-posts .card-title {
-  font-size: 1.25rem;
+  font-size: 17px;
+  color: #3a3855;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.card-footer {
+  margin-top: 17px;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  position: absolute;
+  left: 250px !important;
 }
