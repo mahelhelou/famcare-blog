@@ -61,22 +61,31 @@ h6 {
   z-index: 2;
 }
 
+.featured-blog__content {
+  margin-right: 288px;
+}
+
+.featured-blog__content-meta {
+  display: flex;
+  margin-bottom: 24px;
+  font-family: 'Famcare Medium';
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.featured-blog__content .date {
+  margin-left: 33px;
+}
+
 .featured-blog__title {
   font-size: 2rem;
-  margin-right: 128px;
   margin-bottom: 3rem;
   font-family: 'Famcare Medium';
 }
 
 .featured-blog__excerpt {
   font-size: 17px;
-  margin-right: 120px;
   margin-bottom: 64px;
-}
-
-.featured-blog__actions {
-  margin-right: 120px;
-  margin-top: 87px;
 }
 
 .featured-blog__actions-button .btn {
@@ -103,9 +112,12 @@ h6 {
   padding-right: 5rem;
 }
 
-.featured-blog .swiper-pagination span {
-  width: .75rem;
-  height: .75rem;
+.featured-blog .swiper-pagination .swiper-pagination-bullet,
+.featured-blog .swiper-pagination .swiper-pagination-bullet-active,
+.featured-blog .swiper-pagination .swiper-pagination-bullet-active-prev,
+.featured-blog .swiper-pagination .swiper-pagination-bullet-active-next {
+  width: 2.75rem !important;
+  height: 2.75rem !important;
   background-color: #7d7bfa;
 }
 
@@ -114,14 +126,8 @@ h6 {
   display: flex;
 }
 
-/* Margins */
-
 .featured-blog .blog-post__author {
-  margin-right: 120px;
-}
-
-.blog-posts .blog-post__author {
-  margin-right: 0;
+  margin-bottom: 63px !important;
 }
 
 .blog-post__author-image {

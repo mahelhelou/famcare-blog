@@ -1,8 +1,9 @@
 const featuredBlogPosts = new Swiper('.featured-blog .swiper', {
-	speed: 7500,
-	delay: 400,
+	speed: 1750,
 	autoplay: {
-		disableOnInteraction: false
+		enabled: true,
+		disableOnInteraction: false,
+		delay: 10000
 	},
 	spaceBetween: 20,
 	loop: true,
