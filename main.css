@@ -149,6 +149,11 @@ h6 {
 }
 
 /* Blog posts */
+.blog-posts__search {
+  display: flex;
+  justify-content: space-between;
+}
+
 .blog-posts .card-img {
   height: 225px;
   border-radius: 1rem;
@@ -162,8 +167,20 @@ h6 {
 }
 
 .blog-posts form input {
-  outline: 0;
-  height: 32px;
+  border: 1px solid #9a98b3 !important;
+  height: 48px;
+  margin-left: 32px;
+}
+
+.blog-posts select {
+  border-color: #9a98b3;
+  margin-left: 32px;
+}
+
+.blog-posts button {
+  height: 48px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .blog-posts .row {
