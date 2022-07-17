@@ -143,10 +143,16 @@ h6 {
   font-size: 12px;
 }
 
+.featured-blog__actions-share-icons img {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* Blog posts */
 .blog-posts .card-img {
   height: 225px;
   border-radius: 1rem;
+  margin-left: 12px;
 }
 
 .blog-posts form {
