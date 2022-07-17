@@ -106,19 +106,9 @@ h6 {
 }
 
 .featured-blog .swiper-pagination {
-  width: 100% !important;
-  display: flex;
-  justify-content: start;
-  padding-right: 5rem;
-}
-
-.featured-blog .swiper-pagination .swiper-pagination-bullet,
-.featured-blog .swiper-pagination .swiper-pagination-bullet-active,
-.featured-blog .swiper-pagination .swiper-pagination-bullet-active-prev,
-.featured-blog .swiper-pagination .swiper-pagination-bullet-active-next {
-  width: 2.75rem !important;
-  height: 2.75rem !important;
-  background-color: #7d7bfa;
+  position: absolute;
+  top: 90%;
+  right: 90%;
 }
 
 /* Blog post */

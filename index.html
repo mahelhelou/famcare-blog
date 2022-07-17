@@ -14,7 +14,7 @@
 
 <body>
   <section class="py-5 featured-blog">
-    <div class="swiper">
+    <div class="swiper position-relative">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="row">
@@ -164,14 +164,13 @@
 
   <section class="blog-posts">
     <div class="container">
-      <form action="" method="get">
+      <form class="form-inline" action="#" method="get">
         <div class="blog-posts__search">
           <div class="d-flex">
             <div class="blog-posts__search-input">
-              <i class="fas fa-search"></i>
-              <input type="text" placehold="ابحث داخل المدونة">
+              <input type="text" class="form-control-lg" placehold="ابحث داخل المدونة">
             </div>
-            <select name="searchAllCategories" id="search-all-categories">
+            <select class="form-control-lg" name="searchAllCategories" id="search-all-categories">
               <option value="جميع التفاصيلصنيفات">جميع التصنيفات</option>
               <option value="تربوي">تربوي</option>
               <option value="نفسي">نفسي</option>
