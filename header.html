@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body <?php body_class(); ?>>
+  <header class="mb-5 mb-lg-0">
+    <div class="nav-menu">
+      <div class="container">
+        <nav class="navbar navbar navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="images/bars.svg">
+          </button>
+          <?php $site_logo = ps_option( 'of_logo', false, 'url' );?>
+          <a title="فامكير" href="index.html" class="navbar-brand">
+            <img src="images/famcare-logo--white.svg" alt="فامكير">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul id="menu-main-menu" class="navbar-nav ml-auto">
+              <li id="menu-item-6"
+                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home active menu-item-6 nav-item">
+                <a title="فامكير" href="https://famcare.app/" class="nav-link">فامكير</a>
+              </li>
+              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1026"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1026 nav-item"><a
+                  title="الأخصائيين" href="https://famcare.app/specialists/" class="nav-link">الأخصائيين</a></li>
+              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-700"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-700 nav-item"><a
+                  title="المدونة" href="https://famcare.app/blog/" class="nav-link">المدونة</a></li>
+              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1227"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1227 nav-item"><a
+                  title="الأكاديمية" href="https://academy.famcare.app/" class="nav-link">الأكاديمية</a></li>
+              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-187"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187 nav-item"><a
+                  title="المنظمات"
+                  href="https://famcare.app/%d9%81%d8%a7%d9%85%d9%83%d9%8a%d8%b1-%d9%84%d9%84%d9%85%d9%86%d8%b8%d9%85%d8%a7%d8%aa/"
+                  class="nav-link">المنظمات</a></li>
+              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-188"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188 nav-item"><a
+                  title="من نحن" href="https://famcare.app/%d9%85%d9%86-%d9%86%d8%ad%d9%86/" class="nav-link">من نحن</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary btnForm ml-auto" data-toggle="modal"
+              data-target="#joinUsModal">انضم كأخصائي</button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>

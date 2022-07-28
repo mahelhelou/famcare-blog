@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'Famcare Bold';
   src: url('fonts/Famtree-Bold.otf') format("truetype");
@@ -61,6 +66,24 @@ h6 {
   z-index: 2;
 }
 
+.featured-blog .swiper-wrapper {
+  position: relative;
+}
+
+.featured-blog .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  right: 0 !important;
+}
+
+.featured-blog .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7d7bfa !important;
+  margin-right: 0;
+}
+
 .featured-blog__content {
   margin-right: 288px;
 }
@@ -105,12 +128,6 @@ h6 {
   height: 100%;
 }
 
-.featured-blog .swiper-pagination {
-  position: absolute;
-  top: 90%;
-  right: 90%;
-}
-
 /* Blog post */
 .blog-post__author {
   display: flex;
@@ -146,6 +163,10 @@ h6 {
 .featured-blog__actions-share-icons img {
   width: 2rem;
   height: 2rem;
+}
+
+.featured-blog__actions-share-button .btn {
+  background-color: #7d7bfa;
 }
 
 /* Blog posts */
@@ -210,12 +231,30 @@ h6 {
   margin-top: 17px;
 }
 
-.swiper-pagination {
-  position: relative;
+.swiper-pagination-bullet {
+  width: 200px !important;
+  height: 200px !important;
+  background-color: orange;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
-.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-  position: absolute;
-  left: 250px !important;
+@media screen and (max-width: 480px) {
+  .featured-blog__content {
+    margin-right: 0;
+    margin-top: -50px;
+    background-color: red;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    z-index: 3;
+  }
+
+  .featured-blog::before {
+    display: none;
+  }
+
+  .featured-blog .featured-blog__image {
+    width: 100%;
+    border-radius: 0 !important;
+    height: 210px;
+  }
 }
