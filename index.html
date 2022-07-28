@@ -167,23 +167,35 @@
 
   <section class="blog-posts">
     <div class="container">
-      <form action="#" method="get">
-        <div class="blog-posts__search">
-          <div class="d-flex">
-            <div class="blog-posts__search-input">
-              <input type="text" class="form-control-lg" placeholder="ابحث داخل المدونة">
+        <div class="blogs mt-5 mb-5 text-center">
+          <form action="#" method="get">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="blog-posts__search-input">
+                <input type="text" class="form-control-lg" placeholder="ابحث داخل المدونة">
+                <span> 
+                  <i class="fa fa-search" aria-hidden="true"></i>
+								</span>
+              </div>
             </div>
-            <select class="form-control-lg" name="searchAllCategories" id="search-all-categories">
-              <option value="جميع التفاصيلصنيفات">جميع التصنيفات</option>
-              <option value="تربوي">تربوي</option>
-              <option value="نفسي">نفسي</option>
-            </select>
-            <div class="form-submit">
-              <button class="btn btn-primary px-4">بحـــث</button>
+            <div class="col-md-4">
+              <select class="form-control-lg" name="searchAllCategories" id="search-all-categories">
+                <option value="جميع التفاصيلصنيفات">جميع التصنيفات</option>
+                <option value="تربوي">تربوي</option>
+                <option value="نفسي">نفسي</option>
+              </select>
             </div>
+            <div class="col-md-4">
+              <div class="form-submit text-left">
+                <button class="btn btn-primary px-4">بحـــث</button>
+              </div>
+            </div>
+    
           </div>
-        </div>
+     
       </form>
+    </div>
 
       <!-- Posts -->
       <div class="row">

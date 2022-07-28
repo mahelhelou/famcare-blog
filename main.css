@@ -183,30 +183,38 @@ h6 {
 
 .blog-posts form {
   margin-top: 32px;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .blog-posts form input {
-  border: 1px solid #9a98b3 !important;
+  border: 1px solid rgb(243, 242, 242) !important;
   height: 48px;
   margin-left: 32px;
+  width: 100%;
+  position: relative;
+  padding-right: 40px;
+  color:#9A98B3;
+  font-size: 17px;
+  
 }
 
 .blog-posts select {
-  border-color: #9a98b3;
+  border-color: rgb(243, 242, 242);
   margin-left: 32px;
+  width: 100%;
+  color: #9A98B3;
+  font-size: 17px;
+  height: 48px;
+
 }
 
 .blog-posts button {
   height: 48px;
   padding-left: 3rem;
   padding-right: 3rem;
+  width: 150px;
 }
 
-.blog-posts .row {
-  margin-top: 64px;
-}
 
 .blog-posts .blog-posts__meta {
   line-height: 24px;
@@ -257,4 +265,15 @@ h6 {
     border-radius: 0 !important;
     height: 210px;
   }
+}
+form{
+  border: 2px solid #F2F5F7;
+  padding: 20px;}
+
+ .blog-posts__search-input span {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: #9A98B3;
+    font-size: 20px;
 }
